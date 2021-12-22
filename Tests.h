@@ -27,14 +27,14 @@ void TestAll(){
     std::ifstream input4("4.txt");//файл содержит полный граф из четырех вершин
     Graph_lists graphLists2(input4);
 
-    int test1 = graphLists1.Components();
-    if(test1 != 3){
+    DynamicArray<int> test1 = graphLists1.Components();
+    if(test1.GetSize() != 3){
         std::cerr << "DFS ERROR !";
         std::exit(0);
     }
 
-    int test2 = graphLists2.Components();
-    if(test2 != 1){
+    DynamicArray<int> test2 = graphLists2.Components();
+    if(test2.GetSize() != 1){
         std::cerr << "DFS ERROR !";
         std::exit(0);
     }

@@ -123,7 +123,7 @@ public:
 template <typename T>
 std::ostream & operator << (std::ostream & out, DynamicArray<T> a){//перегрузка оператора << для вывода
     for(int i = 0; i < a.GetSize();++i){
-        out << a[i] << "\t";
+        out << a[i] << " ";
     }
     return out;
 }
